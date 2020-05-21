@@ -11,6 +11,7 @@ public class PerfectionPlugin extends TenkorePlugin {
     public void enable(){
         FrontDoor.load(WhisperSystem.class);
         Bukkit.getPluginManager().registerEvents(new ChatFormatter(), (JavaPlugin)getCore());
+        Bukkit.getPluginManager().registerEvents(new TabColor(), (JavaPlugin)getCore());
     }
     
 }
